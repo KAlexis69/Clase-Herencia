@@ -18,7 +18,11 @@ public class Main {
          d.setApellidos("Andaluz");
          d.setNombre("Kevin");
          d.setSexo("Masculini");
-         
+         d.setIdPersona(1);
+         d.setTitulo("Ingeniero en Sistemas");
+         d.setEspecialidad("Backend");
+         d.setRegistroSenescyt("000-000-0PO");
+         System.out.println(d.imprimir());
         
          
     }
