@@ -16,14 +16,13 @@ public class Administrativo extends Persona{
     public Administrativo() {
     }
 
-    public Administrativo(int idAdministrativo, String cargo, String area, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo) {
-        super(idPersona, nombre, apellidos, telefono, fechaNacimiento, cedula, direccion, correoElectronico, sexo);
+    public Administrativo(int idAdministrativo, String cargo, String area, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
+        super(idPersona, nombre, apellidos, telefono, fechaNacimiento, cedula, direccion, correoElectronico, sexo, usuario, clave);
         this.idAdministrativo = idAdministrativo;
         this.cargo = cargo;
         this.area = area;
     }
-    
-   
+ 
 
     public int getIdAdministrativo() {
         return idAdministrativo;

@@ -20,11 +20,13 @@ public class Persona {
     private String direccion;
     private String correoElectronico;
     private String sexo;
+    private String usuario;
+    private String clave;
 
     public Persona() {
     }
 
-    public Persona(int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo) {
+    public Persona(int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -34,6 +36,72 @@ public class Persona {
         this.direccion = direccion;
         this.correoElectronico = correoElectronico;
         this.sexo = sexo;
+        this.usuario = usuario;
+        this.clave = clave;
+    }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getCorreoElectronico() {
+        return correoElectronico;
+    }
+
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 
     public String getSexo() {
@@ -44,70 +112,21 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    public int getIdPersona() {
-        return idPersona;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getClave() {
+        return clave;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
-
-    public String getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
-
-    public void setIdPersona(int idPersona) {
-        this.idPersona = idPersona;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setFechaNacimiento(String fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
-    }
-    
 
     //regla negocos
     public String imprimir() {
@@ -118,7 +137,9 @@ public class Persona {
                 + "Cédula:" + getCedula() + "\n"
                 + "Dirección:" + getDireccion() + "\n"
                 + "Correo Electrónico:" + getCorreoElectronico() + "\n"
-                + "Telefono:" + getTelefono() + "\n"
+                + "Usuario:" + getUsuario()+ "\n"
+                + "Clave:" + "*************"+ "\n"
+                + "Telefono:" + getTelefono()+ "\n"
                 + "Sexo:" + getSexo() + "\n"
                 + "Fecha de Nacimiento" + getFechaNacimiento();
     }

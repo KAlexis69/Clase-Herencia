@@ -17,13 +17,14 @@ public class Estudiante extends Persona {
     public Estudiante() {
     }
 
-    public Estudiante(int idEstudiante, int numeroMatricula, String horario, String jornada, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo) {
-        super(idPersona, nombre, apellidos, telefono, fechaNacimiento, cedula, direccion, correoElectronico, sexo);
+    public Estudiante(int idEstudiante, int numeroMatricula, String horario, String jornada) {
         this.idEstudiante = idEstudiante;
         this.numeroMatricula = numeroMatricula;
         this.horario = horario;
         this.jornada = jornada;
     }
+
+
 
     public int getIdEstudiante() {
         return idEstudiante;
@@ -72,5 +73,5 @@ public class Estudiante extends Persona {
                 "Numero deMatricula:"+getNumeroMatricula()+"\n"+
                 "Horario:"+getHorario()+"\n"+
                 "Jornada:"+getHorario();
-   
+       }
 }
