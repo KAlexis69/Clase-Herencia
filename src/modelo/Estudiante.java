@@ -11,20 +11,19 @@ package modelo;
 public class Estudiante extends Persona {
    private int idEstudiante;
    private int numeroMatricula;
-   private String horario;
    private String jornada;
+   private int idPersona;
 
     public Estudiante() {
     }
 
-    public Estudiante(int idEstudiante, int numeroMatricula, String horario, String jornada) {
+    public Estudiante(int idEstudiante, int numeroMatricula, String jornada, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
+        super(idPersona, nombre, apellidos, telefono, fechaNacimiento, cedula, direccion, correoElectronico, sexo, usuario, clave);
         this.idEstudiante = idEstudiante;
         this.numeroMatricula = numeroMatricula;
-        this.horario = horario;
         this.jornada = jornada;
+        this.idPersona = idPersona;
     }
-
-
 
     public int getIdEstudiante() {
         return idEstudiante;
@@ -42,14 +41,6 @@ public class Estudiante extends Persona {
         this.numeroMatricula = numeroMatricula;
     }
 
-    public String getHorario() {
-        return horario;
-    }
-
-    public void setHorario(String horario) {
-        this.horario = horario;
-    }
-
     public String getJornada() {
         return jornada;
     }
@@ -57,6 +48,17 @@ public class Estudiante extends Persona {
     public void setJornada(String jornada) {
         this.jornada = jornada;
     }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
+    }
+   
+
+
        public String imprimir(){
         return "-------DATOS PERSONA-----------\n"+
                 "Id:"+getIdPersona()+"\n"+
@@ -71,7 +73,7 @@ public class Estudiante extends Persona {
                 "-------DATOS ESTUDIANTE-----------\n"+
                 "Id Estudiante:"+getIdEstudiante()+"\n"+
                 "Numero deMatricula:"+getNumeroMatricula()+"\n"+
-                "Horario:"+getHorario()+"\n"+
-                "Jornada:"+getHorario();
+                "Jornada:"+getJornada();
+ 
        }
 }

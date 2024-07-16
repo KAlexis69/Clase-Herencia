@@ -26,7 +26,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
+    public Persona(int idPersona, String nombre, String apellidos,int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -164,6 +164,10 @@ public class Persona {
     }
 
     public void validarCedula() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setNombres(String next) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

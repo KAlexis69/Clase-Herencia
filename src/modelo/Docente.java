@@ -14,28 +14,28 @@ public class Docente extends Persona{
     private String especialidad;
     private String titulo;
     private String registroSenescyt;
-    private String escalaSalaria;
+    private String escalaSalarial;
     
      public Docente() {
     }
 //Atributos propios
-    public Docente(int idDocente, String especialidad, String titulo, String registroSenescyt, String escalaSalaria) {
+    public Docente(int idDocente, String especialidad, String titulo, String registroSenescyt, String escalaSalarial) {
         this.idDocente = idDocente;
         this.especialidad = especialidad;
         this.titulo = titulo;
         this.registroSenescyt = registroSenescyt;
-        this.escalaSalaria = escalaSalaria;
+        this.escalaSalarial = escalaSalarial;
     }
 
 //Constructor superclase
 
-    public Docente(int idDocente, String especialidad, String titulo, String registroSenescyt, String escalaSalaria, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
+    public Docente(int idDocente, String especialidad, String titulo, String registroSenescyt, String escalaSalarial, int idPersona, String nombre, String apellidos, int telefono, String fechaNacimiento, String cedula, String direccion, String correoElectronico, String sexo, String usuario, String clave) {
         super(idPersona, nombre, apellidos, telefono, fechaNacimiento, cedula, direccion, correoElectronico, sexo, usuario, clave);
         this.idDocente = idDocente;
         this.especialidad = especialidad;
         this.titulo = titulo;
         this.registroSenescyt = registroSenescyt;
-        this.escalaSalaria = escalaSalaria;
+        this.escalaSalarial = escalaSalarial;
     }
     
     
@@ -57,8 +57,8 @@ public class Docente extends Persona{
         return registroSenescyt;
     }
 
-    public String getEscalaSalaria() {
-        return escalaSalaria;
+    public String getEscalaSalarial() {
+        return escalaSalarial;
     }
 
     public void setIdDocente(int idDocente) {
@@ -77,8 +77,8 @@ public class Docente extends Persona{
         this.registroSenescyt = registroSenescyt;
     }
 
-    public void setEscalaSalaria(String escalaSalaria) {
-        this.escalaSalaria = escalaSalaria;
+    public void setEscalaSalarial(String escalaSalarial) {
+        this.escalaSalarial = escalaSalarial;
     }
     
     public String imprimir(){
@@ -97,7 +97,7 @@ public class Docente extends Persona{
                 "Especialidad:"+getEspecialidad()+"\n"+
                 "Titulo:"+getTitulo()+"\n"+
                 "Registro Senescyt:"+getRegistroSenescyt()+"\n"+
-                "Escala Salarial:"+getEscalaSalaria();
+                "Escala Salarial:"+getEscalaSalarial();
                 
     }
 
